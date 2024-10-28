@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /////////////for 1 condition
+    var username = prompt("Enter username ?");
+    var password = prompt("Enter password ?");
+    if(username != "admin" && password == "admin123")
+    {
+       document.write("<h1>Logged in</h1>"); 
+    }
+    else
+    {
+        alert("Username or password is incorrect");
+    }
+
+    /////////////for multiple condition
+
+    var num1 = parseInt(prompt("Enter num1 here"));
+    var num2 = parseInt(prompt("Enter num2 here"));
+    var option = prompt("Enter operation you want to perform(+,-,*,/)");
+
+    if(option == "+")
+    {
+        document.write("<h1>Addition of numbers are : "+(num1+num2)+"</h1>");
+    }
+    else if(option == "-")
+    {
+        document.write("<h1>Subtraction of numbers are : "+(num1-num2)+"</h1>");
+    }
+    else if(option == "*")
+    {
+        document.write("<h1>Multiplication of numbers are : "+(num1*num2)+"</h1>");
+    }
+    else if(option == "/")
+    {
+        document.write("<h1>Divison of numbers are : "+(num1/num2)+"</h1>");
+    }
+    else
+    {
+        alert("Choose correct operation (+,-,*,/)");
+    }
+    
+
+</script>
+</html>

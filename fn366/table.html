@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table tr th,td{
+            padding: 10px;
+            font-size: 20px;
+        }
+        table tr th{
+            background-color: black;
+            color: white;
+        }
+        table tr td{
+            background-color: palegreen;
+        }
+        table{
+            box-shadow: 5px 5px 20px black;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Html Tables</h1>
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Gender</th>
+                    <th>Country</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Muhammad Ali</td>
+                    <td>0345-8855456</td>
+                    <td rowspan="2">ali@gmail.com</td>
+                    <td>Male</td>
+                    <td>Pakistan</td>
+                    <td>Karachi</td>
+                </tr>
+                <tr>
+                    <td>Hamza</td>
+                    <td>0345-8855456</td>
+                    <!-- <td>hamza@gmail.com</td> -->
+                    <td>Male</td>
+                    <td>Pakistan</td>
+                    <td>Karachi</td>
+                </tr>
+                <tr>
+                    <td>Maryam</td>
+                    <!-- <td>0345-8855456</td> -->
+                    <td colspan="2">maryam@gmail.com</td>
+                    <td>Female</td>
+                    <td>Pakistan</td>
+                    <td>Karachi</td>
+                </tr>
+                <tr>
+                    <td>Abdullah</td>
+                    <td>0345-8855456</td>
+                    <td>abdullah@gmail.com</td>
+                    <td>Male</td>
+                    <td>Pakistan</td>
+                    <td>Karachi</td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+
+    <h1>Audio and Video files</h1>
+
+    <audio src="files/file_example_MP3_700KB.mp3" controls></audio>
+    <br>
+    <video src="files/SampleVideo_1280x720_1mb.mp4" controls height="400px" width="500px" loop></video>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HJFxTsX0Ok0?si=gfmNuVkybIGhLeLx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>
